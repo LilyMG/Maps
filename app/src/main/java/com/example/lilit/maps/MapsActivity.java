@@ -42,11 +42,13 @@ public class MapsActivity extends FragmentActivity {
 
         @Override
         public void onProviderEnabled(String s) {
+            status.setText("status is : " + String.valueOf(s));
           //  Log.d("MyLog", "onProviderEnabled");
         }
 
         @Override
         public void onProviderDisabled(String s) {
+            status.setText("status is : " + String.valueOf(s));
           //  Log.d("MyLog", "onProviderDisabled");
         }
     };
